@@ -212,7 +212,7 @@
 
   function initPlayer() {
     if (hls) { try { hls.destroy(); } catch (e) {} hls = null; }
-    const streamUrl = 'http://127.0.0.1:8090/relay/playlist.m3u8';
+    const streamUrl = 'http://127.0.0.1:8091/live/playlist.m3u8';
     if (Hls.isSupported()) {
      hls = new Hls({
     lowLatencyMode: false,
